@@ -1,0 +1,72 @@
+/** Define o tamanho do form e a margem do topo **/
+.container section div#contato form {
+    width: 45%;
+    margin-top: 15px;
+}
+
+/** Oculta a mensagem de sucesso **/
+.container section div#contato span.msg-sucesso.hidden {
+    width: 0 !important;
+    display: none;
+}
+
+/** Personaliza o texto da mensagem de sucesso **/
+.container section div#contato span.msg-sucesso {
+    background-color: green;
+    display: block;
+    width: 100%;
+    margin-bottom: 18px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    font-size: 1.1rem;
+    box-shadow: 1px 1px 2px 1px green;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/** Define a margem para o grupo dos inputs **/
+div.grupo-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+/** Define a margem e tamanho da fonte para a label do input **/
+div.grupo-input label {
+    margin-bottom: 3px;
+    font-size: 1.15rem;
+}
+
+/** Personaliza os inputs tirando as bordas e definindo a altura do mesmo **/
+div.grupo-input input[type=text], div.grupo-input input[type=text]:focus-visible,
+div.grupo-input input[type=email], div.grupo-input input[type=email]:focus-visible,
+div.grupo-input textarea, div.grupo-input textarea:focus-visible {
+    height: 23px;
+    border: none !important;
+    border-bottom: 1px solid black !important;
+    outline: unset;
+}
+
+
+/** Personaliza o input de submit **/
+div.grupo-input input[type=submit] {
+    border: none;
+    width: 7rem;
+    padding: 8px;
+    color: #FFFFFF;
+    background-color: #000484;
+    border-radius: 3px;
+    font-size: 1rem;
+    margin-top: 10px;
+    align-self: flex-end;
+    box-shadow: 1px 1px 2px 1px #CCCCCC;
+}
+
+/** Personaliza o input de submit quando passado o mouse em cima **/
+div.grupo-input input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #000484;
+    border: 1px solid #000484;
+    box-shadow: 1px 1px 2px 1px #CCCCCC;
+}

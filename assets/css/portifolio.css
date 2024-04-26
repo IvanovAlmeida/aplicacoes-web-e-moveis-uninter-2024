@@ -1,0 +1,54 @@
+.container section div#portifolio div.section-content table#table-portifolio tr td {
+    width: 450px;
+    height: 300px;
+    padding-bottom: 15px;
+}
+
+.container section div#portifolio div.section-content table#table-portifolio tr td img.img-portifolio {
+    width: 450px;
+    height: 300px;
+    border-radius: 5px; 
+    box-shadow: 1px 1px 2px 1px #CCCCCC;
+}
+
+.container section div#portifolio div.section-content table#table-portifolio tr td.conteudo {
+    padding-left: 8px;
+    padding-right: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container section div#portifolio div.section-content table#table-portifolio tr td.conteudo h1.titulo {
+    border-bottom: 1px solid black;
+}
+
+.container section div#portifolio div.section-content table#table-portifolio tr td.conteudo div.texto {
+    margin-top: 10px;
+    font-size: 1.05rem;
+    letter-spacing: .05rem;
+}
+
+.container section div#portifolio div.section-content table#table-portifolio tr td.conteudo div.texto p {
+    margin-bottom: 5px;
+}
+
+.container section div#portifolio div.section-content table#table-portifolio tr td.conteudo div.links {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: start;
+}
+
+.container section div#portifolio div.section-content table#table-portifolio tr td.conteudo div.links a {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    color: black;
+}
+
+.container section div#portifolio div.section-content table#table-portifolio tr td.conteudo div.links a:hover {
+    color: #000484;   
+}
+
+.container section div#portifolio div.section-content table#table-portifolio tr td.conteudo div.links a img {
+    margin-right: 3px;
+}

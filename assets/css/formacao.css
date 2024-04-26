@@ -1,0 +1,48 @@
+.container section div#formacao div.section-content table.table-formacao {
+    margin-bottom: 15px;
+    width: 85%;
+}
+
+.container section div#formacao div.section-content table.table-formacao td {
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container section div#formacao div.section-content table.table-formacao th {
+    width: 85px;
+}
+
+.container section div#formacao div.section-content table.table-formacao th img.img-logo {
+    width: 85px;
+    height: 85px;
+    border-radius: 5px; 
+    box-shadow: 1px 1px 2px 1px #CCCCCC;
+}
+
+.container section div#formacao div.section-content table.table-formacao td h1.titulo {
+    font-weight: 500;
+    border-bottom: 1px solid black;
+    margin-bottom: 8px;
+}
+
+.container section div#formacao div.section-content table.table-formacao td h1.titulo ,
+.container section div#formacao div.section-content table.table-formacao td span.sub-titulo,
+.container section div#formacao div.section-content table.table-formacao td span.periodo {
+    letter-spacing: .1rem;
+}
+
+.container section div#formacao div.section-content table.table-formacao td span.sub-titulo {
+    font-size: 1.05rem;
+    margin-bottom: 3px;
+}
+
+.container section div#formacao div.section-content table.table-formacao td span.periodo {
+    font-size: .9rem;
+    color: #726f6f;
+    margin-bottom: 3px;
+}
+
+.container section div#formacao div.section-content table.table-formacao td.certificado h1.titulo {
+    cursor: pointer;
+}

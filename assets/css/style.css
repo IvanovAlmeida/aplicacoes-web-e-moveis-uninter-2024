@@ -1,0 +1,165 @@
+* {    
+    /** Zerando a margin e o padding de todas as tags **/
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Os itens não se expandem para ocupar o container. */
+.grow0 {
+	flex-grow: 0;
+}
+
+/* Os itens se expandem igualmente para ocupar o container. Utilizando apenas o flex-grow, o crescimento é distribuído igualmente antes e depois do conteúdo de cada elemento. (pois por padrão o flex-basis é auto) */
+.grow1 {
+	flex-grow: 1;
+}
+
+/* Os itens se expandem duas vezes mais que aqueles com flex-grow: 1; */
+.grow2 {
+	flex-grow: 2;
+}
+
+body {
+    /** Usando display flex e flex column para organizar o conteudo numa coluna só **/
+    display: flex;
+    flex-direction: column;
+    /** Definindo o height da página para 100 virtual height para tomar toda a tela **/
+    height: 100vh;
+    background-color: #fafafa;
+}
+
+.container {    
+    display: flex;
+    /** Define tamanho 12 em relação aos demais **/
+    flex: 12;
+}
+
+.container aside {    
+    flex: 1;
+    background-color: #000484;
+    margin-right: 5px;
+    padding: 5px 0;
+    overflow-x: hidden;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.container aside div.titulo h1 {
+    padding-left: 15px;
+    margin: 15px 0px;
+    color: #FFFFFF;
+}
+
+.container aside ul#menu {
+    margin-top: 15px;
+}
+
+.container aside ul#menu li a {
+    color: #FFF;
+    font-size: 1.4rem;
+    width: 100%;
+    display: block;
+    padding: 8px 0 8px 15px;
+}
+
+.container aside ul#menu li a:hover,
+.container aside ul#menu li a.active {
+    color: #000484;
+    background-color: #fafafa;
+}
+
+.container aside div.footer {
+    border-top: 1px solid #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 8px;
+    color: #FFFFFF;
+}
+
+.container aside div.footer div.links ul li {
+    list-style-type: none;
+}
+
+
+.container aside div.footer div.links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container aside div.footer div.links ul li a {
+    padding: 8px 16px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container aside div.footer div.links {
+    margin-bottom: 8px;
+}
+
+.container aside div.footer div.links img {
+    filter: invert(100%);
+}
+
+.container aside div.footer div.texto-rodape {
+    text-align: center;
+    letter-spacing: 0.12rem;
+}
+
+.container section {
+    flex: 4;
+    margin: 15px;
+    display: flex;
+}
+
+.container section div.hidden {
+    display: none !important;
+    height: 0;
+    width: 0;
+}
+
+.container section div.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 18px;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 2px 1px #CCCCCC;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.container section div.section .section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    width: 95%;
+}
+
+.container section div.section .section-header h1 {
+    font-size: 1.7rem;
+}
+
+.container section div.section .section-header hr {
+    width: 100%;
+    height: 0;
+    border: 0;
+    border-bottom: 1px solid #CCCCCC;
+    margin: 15px 0;
+}
+
+.container section div.section .section-content {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}

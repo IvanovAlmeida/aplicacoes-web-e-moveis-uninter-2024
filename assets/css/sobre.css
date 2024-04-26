@@ -1,0 +1,9 @@
+/** Define o tamanho do conteudo e espaçamento das letras **/
+.container section div#sobre div.section-content p {
+    margin-bottom: 8px;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    letter-spacing: .08rem;
+    width: 100%;
+    text-align: left;
+}
